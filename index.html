@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<input type="text" id="title"  placeholder="Nhập tiêu đề"/>
+<input type="datetime-local" id="dateFrom"  placeholder="Nhập thời gian từ"/>
+<input type="datetime-local" id="dateTo"  placeholder="đến"/>
+<button  onclick="findAllByTitleContaining()">Search</button>
+<br><br>
+
+<input type="datetime-local" id="dateFrom1"  placeholder="Nhập thời gian từ"/>
+<input type="datetime-local" id="dateTo1"  placeholder="đến"/>
+<button  onclick="searchByCreateAtOrderBy()">Search</button>
+<br><br>
+
+<input type="text" id="title2"  placeholder="Nhập tiêu đề"/>
+<input type="datetime-local" id="dateFrom2"  placeholder="Nhập thời gian từ"/>
+<input type="datetime-local" id="dateTo2"  placeholder="đến"/>
+<button  onclick="findByTitleAndCreateAtOrderByCreateAt()">Tìm kiếm có sắp xếp</button>
+<div >
+    <table id="display1" border="1px">
+    </table>
+</div>
+<button id="button2" onclick="quayLai()">Quay lại</button>
+<button id="button1" onclick="loadMore()">Tiếp</button>
+</body>
+</html>
